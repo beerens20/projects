@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	width: 1000px;
+	margin: auto;
+}
+
+h3, h4 {
+	font-family: 'Spectral SC', serif;
+}
+
+/* Header styling start */
+.header {
+  background-color: gray;
+  margin-bottom: 2%;
+  /*width: 1000px;
+  margin: auto;*/
+}
+
+/* Layout of logo within header */
+.logo {
+	width: 800px;
+	margin: auto;
+}
+
+.logo img {
+	margin-top: 10px;
+}
+
+.tagline {
+	text-align: center;
+	margin-top: -2%;
+}
+/* Header styling stop */
+
+.resume {
+  /*background-color: gray;*/
+  width: 100%;
+  float: left;
+  margin-bottom: 2%;
+}
+
+.social {
+	background-color: pink;
+	width: 5%;
+	margin-right: 2.5%;
+	float: left;
+}
+
+.cinfo {
+	background-color: blue;
+	width: 45%;
+	margin-right: 2.5%;
+	float: left;
+}
+
+.quals {
+	background-color: green;
+	width: 45%;
+	float: left;
+}
+
+.row1 {
+	width: 100%;
+	clear: both;
+	margin-bottom: 2%;
+	float: left;
+	/*background-color: gray;*/
+}
+
+.repair {
+	width: 45%;
+	margin-right: 10%;
+	background-color: pink;
+	float: left;
+}
+
+.training {
+	width: 45%;
+	background-color: blue;
+	float: left;
+}
+
+.row2 {
+  width: 100%;
+	clear: both;
+	margin-bottom: 2%;
+	float: left;
+	/*background-color: gray;*/
+}
+
+.consult {
+	width: 45%;
+	margin-right: 10%;
+	background-color: pink;
+	float: left;
+}
+
+.news {
+	width: 45%;
+	background-color: blue;
+	float: left;
+}
+
+.footer {
+  width: 100%;
+	clear: both;
+	margin-bottom: 2%;
+	float: left;
+	background-color: gray;
+}
+
+
+
