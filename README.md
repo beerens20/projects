@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-Click here [to see my projects1 page](https://github.com/beerens20/projects/blob/gh-pages/project1.html)
+Click here [to see my projects1 page](project1.mb)
 
 You can use the [editor on GitHub](https://github.com/beerens20/projects/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
