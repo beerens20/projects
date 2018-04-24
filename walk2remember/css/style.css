@@ -1,6 +1,15 @@
 .jumbotron {
-    background: url("../imgs/balloon-heart-love-romance.jpg");
+    background: url('../imgs/balloon-heart-love-romance.jpg') top center;
     background-size: cover;
-    height: 600px;
-    background-repeat: no-repeat;
+    margin-top: 1em;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+#sponsors {
+    border: 1px solid pink;
+}
+
+.sponsor_logos {
+    padding: 10px;
 }
