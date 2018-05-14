@@ -7,9 +7,17 @@
 }
 
 #sponsors {
-    border: 1px solid pink;
+    /*border: 1px solid pink;*/
 }
 
 .sponsor_logos {
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#about_us {
+    padding-top: 50px;
 }
