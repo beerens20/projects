@@ -1,9 +1,14 @@
+/* Fonts
+font-family: 'Marck Script', cursive;
+font-family: 'Anton', sans-serif; */
+
 .jumbotron {
     background: url('../imgs/balloon-heart-love-romance.jpg') top center;
     background-size: cover;
     margin-top: 1em;
     padding-top: 10em;
     padding-bottom: 10em;
+    height: 500px;
 }
 
 #sponsors {
@@ -18,6 +23,10 @@
     
 }
 
-#about_us {
-    padding-top: 50px;
+/* #about_us {
+    padding-top: 0px;
+} */
+
+#about_header_text {
+    font-family: 'Marck Script', cursive;
 }
