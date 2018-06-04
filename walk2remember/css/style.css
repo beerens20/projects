@@ -2,6 +2,10 @@
 font-family: 'Marck Script', cursive;
 font-family: 'Anton', sans-serif; */
 
+body{
+    font-family: 'Anton', sans-serif;
+}
+
 .jumbotron {
     background: url('../imgs/balloon-heart-love-romance.jpg') top center;
     background-size: cover;
@@ -12,15 +16,19 @@ font-family: 'Anton', sans-serif; */
 }
 
 #sponsors {
-    /*border: 1px solid pink;*/
+    /* border: 1px solid pink; */
+    margin-bottom: 25px;
 }
+
+/* .sponsors_heading{
+    margin-top: 25px;
+} */
 
 .sponsor_logos {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 /* #about_us {
