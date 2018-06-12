@@ -1,13 +1,16 @@
 /* Fonts
 font-family: 'Marck Script', cursive;
-font-family: 'Anton', sans-serif; */
+font-family: 'Anton', sans-serif; 
+font-family: 'Merriweather Sans', sans-serif;
+*/
 
 body{
-    font-family: 'Anton', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .jumbotron {
     background: url('../imgs/balloon-heart-love-romance.jpg') top center;
+    opacity: .6;
     background-size: cover;
     margin-top: 1em;
     padding-top: 10em;
@@ -37,4 +40,46 @@ body{
 
 #about_header_text {
     font-family: 'Marck Script', cursive;
+}
+
+#walk-banner {
+    height: 100px;
+    background-color: #fce4ec;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#walk-banner a {
+    text-decoration: none;
+}
+
+#walk-banner 
+
+.walk-banner-header {
+    color: #4FC3F7  ;
+}
+
+.cards{
+    height: 200px;
+    margin-top: 10px;
+    
+}
+
+.card-items{
+    /* background-color: #ECEFF1; */
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+#walk-info-card{
+
+}
+
+#content-card{
+
+}
+
+#sponsor-card{
+
 }
