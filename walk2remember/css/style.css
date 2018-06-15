@@ -8,14 +8,19 @@ body{
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+.bg-jumbotron{
+    min-height: 800px;
+}
+
 .jumbotron {
-    background: url('../imgs/balloon-heart-love-romance.jpg') top center;
+    background: url('../imgs/2017-wtr-pics-8.jpg') top center;
     opacity: .6;
-    background-size: cover;
+    background-size: 100% 100%;
     margin-top: 1em;
     padding-top: 10em;
     padding-bottom: 10em;
-    height: 500px;
+    height: 100vh;
+    display: flex;
 }
 
 #sponsors {
