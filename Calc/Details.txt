@@ -1,0 +1,10 @@
+card_input
+	#card_input_netIncome  // Enter your monthly income
+	#card_input_mortgagePayment // Enter your current mortgage payment
+	#card_input_button // Calculate button
+
+
+
+card_output
+	.card_output_results // Results will populate here
+	.card_output_message // Error messages will populate here

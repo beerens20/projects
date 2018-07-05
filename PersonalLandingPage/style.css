@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin:0;
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
+    color: black;
+    line-height: 1.6;
+}
+
+#showcase{
+    background-image:url(/imgs/blueSkyClouds.jpg);
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+#showcase #links {
+    margin-top: 20px;
+}
+
+#showcase .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border: black 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #b3e5fc;
+}
+
+#links .button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.clock {
+    color: black;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
