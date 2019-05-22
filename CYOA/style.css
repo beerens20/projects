@@ -10,6 +10,11 @@
     border: 1px solid black;
 }
 
+#restartButton a {
+    color: black;
+    font-weight: 600;
+}
+
 /* FOOTER */
 #footer {
     position: absolute;
