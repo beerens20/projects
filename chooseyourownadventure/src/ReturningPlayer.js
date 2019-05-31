@@ -32,3 +32,20 @@ class ReturningPlayer extends Component {
 }
 
 export default ReturningPlayer
+
+
+{/* let x1 = localStorage.getItem('name');
+let playerName = String(x1);
+
+if (playerName != "null" || playerName != "undefined") {
+    return(
+    <div>
+        <h1>Welcome back!</h1>
+    </div>);
+} else {
+    return(
+        <div>
+            <h1>Welcome, what is your name?</h1>
+        </div>
+    )
+} */}
