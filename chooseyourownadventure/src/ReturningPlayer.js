@@ -2,50 +2,47 @@ import React, {Component} from 'react';
 import './returningPlayer.css';
 
 class ReturningPlayer extends Component {
-
     state = {
-        user: ''
-    };
-
-    const user = localStorage.getItem('user')
-
-    handleFormSubmit = () => {
-        localStorage.setItem('user', user);
+        name: ''
+    }
+    handleChange = (e) => {
+        this.setState({
+            name: e.target.value
+        });
+    }
+    handleSubmit = (e) => {
+        localStorage.setItem("name", this.state.name);
     }
 
     render () {
-        return (
-            <div className="container-fluid" id="newPlayerEntry">
-                <div className="col-sm-12 d-flex justify-content-center">
-                <form onSubmit={this.handleFormSubmit}>
-                    <label>Hello, what is your name?</label>
-                    <input name="user" value={this.state.user} onChange={this.handleChange}/>
-                    <label>
-                        <input name="rememberMe" checked={this.state.rememberMe} onChange={"this.handleChange} type="checkbox" /> Remember me
-                    </label>
-                    <button type="submit">Submit</button>
-                </form>
-                </div>
-            </div>
-        );
+            let playerName = localStorage.getItem('name');
+
+            
+
+            if (playerName != null || playerName != undefined) {
+                return(
+                    <div className="container-fluid">
+                        <div className="row">
+                            <h1>Welcome {playerName}!</h1>
+                        </div>
+                    </div>
+                );
+            } else {
+                return(
+                    <div className="container-fluid">
+                        <div className="row">
+                            <h1>Welcome, what is your name?</h1>
+                        </div>
+                        <div className="row">
+                            <form onSubmit={this.handleSubmit}>
+                                <input type="text" onChange={this.handleChange}/>
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                );
+            }
     }
 }
 
 export default ReturningPlayer
-
-
-{/* let x1 = localStorage.getItem('name');
-let playerName = String(x1);
-
-if (playerName != "null" || playerName != "undefined") {
-    return(
-    <div>
-        <h1>Welcome back!</h1>
-    </div>);
-} else {
-    return(
-        <div>
-            <h1>Welcome, what is your name?</h1>
-        </div>
-    )
-} */}
