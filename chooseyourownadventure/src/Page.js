@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ('./CharacterPage');
 
 class Page extends Component {
     render(){
@@ -11,6 +12,7 @@ class Page extends Component {
                         <p>You and Shan rush to the top of the steps and out into the corridor. Already, further down the passage to your right you can hear someone shouting. You recognize the voice of the jailer and the sound of his clanking keys.</p>
                     </div>
                     <div className="col-sm">Display of current attributes</div>
+                    <ul id="characterPage"></ul>
                 </div>
                 <div className="row">
                     <div className="col-sm" id="choices">
