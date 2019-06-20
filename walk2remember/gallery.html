@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            .imageGallery {
+                margin-top:100px;
+            }
+
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 500px) {
+                .column {
+                    width: 100%;
+                }
+            }
+            </style>
+
+    <title>Walk to Remember, Fort Wayne</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="imgs/WTR_Logo.jpg" width="40" height="40" class="d-inline-block align-top" id="wtr_menu_logo" alt="Walk to Remember Logo">
+            Walk to Remember, Fort Wayne
+        </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">    
+      <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="support.html">Donations</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="board.html">Our Board</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contactTarget">Contact</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+</nav>
+
+<!-- IMAGE GALLERY -->
+<div class="imageGallery">
+        <h2>2017 Walk to Remember Event</h2>
+    
+        <div class="row">
+            <div class="column">
+                <a href="imgs/2017-wtr-pics-1.jpg" target="_blank">
+                <img src="imgs/2017-wtr-pics-1.jpg" alt="Walk to Remember 2017" target="_blank" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="imgs/2017-wtr-pics-2.jpg" target="_blank">
+                <img src="imgs/2017-wtr-pics-2.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="imgs/2017-wtr-pics-3.jpg" target="_blank">
+                <img src="imgs/2017-wtr-pics-3.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="imgs/2017-wtr-pics-4.jpg" target="_blank">
+                <img src="imgs/2017-wtr-pics-4.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="imgs/2017-wtr-pics-5.jpg" target="_blank">
+                <img src="imgs/2017-wtr-pics-5.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="imgs/2017-wtr-pics-6.jpg" target="_blank">
+                <img src="imgs/2017-wtr-pics-6.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="column">
+                    <a href="imgs/2017-wtr-pics-7.jpg" target="_blank">
+                    <img src="imgs/2017-wtr-pics-7.jpg" alt="Walk to Remember 2017" style="width:100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="imgs/2017-wtr-pics-8.jpg" target="_blank">
+                    <img src="imgs/2017-wtr-pics-8.jpg" alt="Walk to Remember 2017" style="width:100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="imgs/2017-wtr-pics-9.jpg" target="_blank">
+                    <img src="imgs/2017-wtr-pics-9.jpg" alt="Walk to Remember 2017" style="width:100%">
+                    </a>
+                </div>
+            </div>
+</div>
+
+
+<!-- FOOTER -->
+<div class="container-fluid" id="contactTarget">
+        <div class="row pageFooter bg-light">
+            <div class="col-sm-4 my-auto" id="copyright_text">
+                <p>Copyright &#169; 2018</p>
+                <p style="margin-top: -20px">Site designed by <a href="http://8bitservices.com" target="_blank">8bit Web Development</a></p>
+            </div>
+            <div class="col-sm-4 my-auto d-flex justify-content-around contactUs">
+                <a href="https://www.facebook.com/WalktoRememberFortWayne/" target="_blank"><span>Find us on Facebook: <i class="fab fa-facebook fa-3x"></i></span>
+                 
+                 </a>
+                <a href="mailto:walktorememberfw@hotmail.com">Email us: <span><i class="fas fa-envelope fa-3x"></i></span>
+                        
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

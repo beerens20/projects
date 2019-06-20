@@ -1,0 +1,195 @@
+/* Fonts
+font-family: 'Marck Script', cursive;
+font-family: 'Anton', sans-serif; 
+font-family: 'Merriweather Sans', sans-serif;
+*/
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* .bg-jumbotron{
+    min-height: 1000px;
+} */
+
+.jumbotron {
+    background: url('../imgs/2017-wtr-pics-8.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    opacity: .6;
+    margin-top: 60px;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    /* display: flex; */
+}
+
+#sponsors {
+    /* border: 1px solid pink; */
+    margin-bottom: 25px;
+}
+
+/* .sponsors_heading{
+    margin-top: 25px;
+} */
+
+.sponsor_logos {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #about_us {
+    padding-top: 0px;
+} */
+
+.fancy_header_text {
+    font-family: 'Marck Script', cursive;
+}
+
+#walk-banner {
+    height: 100px;
+    background-color: #fce4ec;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#walk-banner a {
+    text-decoration: none;
+}
+
+.walk-banner-header {
+    color: #4FC3F7  ;
+}
+
+.cards{
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.card-items{
+    /* background-color: #ECEFF1; */
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+
+#content-card{
+    font-size: 1.2em;
+}
+
+
+/* #registration-button{
+    margin-top: 20px;
+} */
+
+#boardHeading {
+    margin-top: 70px;
+    padding-top: 10px;
+    font-size: 70px;
+}
+
+.topDiv {
+    margin-top: 100px;
+}
+
+.boardContent {
+    margin-top: 50px;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    min-width: 500px;
+    width: auto !important;
+    width: 500px;
+}
+
+.center-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+.center-item {
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+@media only screen and (min-width: 480px) {
+    .center-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        padding: 10px;
+        grid-template-areas:
+        "walkInfo ourMission sponsorship"
+    }
+}
+
+.pageFooter {
+    /* background-color: pink; */
+    padding-top: 5px;
+}
+
+.contactUs a{
+    text-decoration: none;
+}
+
+.sponsorshipInfo {
+    margin-top:100px;
+}
+
+.donationTypes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+.donationTypes-cards h5 {
+    text-align: center;
+}
+
+.donationTypes-cards p {
+    text-align: left;
+}
+
+.donationTypes-cards {
+    text-align: center;
+    background-color: #eaecee;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.donationTypes-cards, anyTimeDonation {
+    margin-left: 15px;
+}
+
+.donationTypes-cards, walkSponsorship {
+    margin-right: 15px;
+}
+
+/* @media only screen and (min-width: 500px) {
+    .donationTypes {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        padding: 10px;
+        grid-template-areas:
+        "anyTimeDonation walkSponsorship"
+    }
+} */
+
+.list-group-item p {
+    margin-left: 25%;
+}
