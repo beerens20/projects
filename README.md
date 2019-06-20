@@ -1,2 +1,2 @@
 # projects
-Centralized location for on-going projects.
+Centralized location for public facing projects.
