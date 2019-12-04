@@ -1,0 +1,51 @@
+.card-body {
+  height: 100px;
+}
+
+.hpCard .card-header {
+  /* background: green; */
+}
+
+.card-header input {
+  /* background: green; */
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.card-header input:focus {
+  background: #fff;
+}
+
+#cardRollResult {
+  height: 4rem;
+}
+#cardRollResult .card-title {
+  font-size: .8rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+#cardDamageModifiers {
+  height: 4rem;
+  border-bottom: 1px solid #868e96;
+}
+#cardDamageModifiers .card-title {
+  font-size: .8rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+#cardAttackButton {
+  height: 4rem;
+}
+
+#cardDamage {
+  border-bottom: 1px solid #868e96;
+}
+
+/* 284B63
+CFDBD5
+E8EDDF
+B2FDFF
+242423 */

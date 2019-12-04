@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <title>ClubFight!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">clubFight</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row justify-content-around"><!-- full row for cards -->
+        <div class="col-md-9">
+          <div class="row justify-content-around"> <!-- space for hp and roll cards -->
+            <div class="col-md-3">
+              <div class="card text-center hpCard border-secondary">
+                <div class="card-header">
+                  <input type="text" placeholder="Player">
+                </div>
+                <div class="card-body">
+                  <p class="card-text"><span class="hpInfo" id="playerHp"></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card border-secondary">
+                <div class="card-body text-center" id="cardDamage">
+                  <h5 class="card-title">Damage</h5>
+                  <p class="card-text"><span id="modifiedDamage">--</span></p>
+                </div>
+                <div class="card-body text-center" id="cardRollResult">
+                    <h5 class="card-title text-muted">Roll Result</h5>
+                    <p class="card-text"><span id="rollResult">--</span></p>
+                  </div>
+                  <div class="card-body text-center" id="cardDamageModifiers">
+                      <h5 class="card-title text-muted">Damage Modifiers</h5>
+                      <p class="card-text"><span id="modifiedDamage">32</span></p>
+                    </div>
+                <div class="card-body text-center d-flex align-items-center" id="cardAttackButton">
+                  <button class="btn btn-primary btn-block" id="attackButton">ATTACK!</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center border-secondary hpCard">
+                <div class="card-header">
+                  Computer
+                </div>
+                <div class="card-body">
+                  <p class="card-text"><span class="hpInfo" id="computerHp"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-secondary text-center">
+            <div class="card-header">
+              Inventory
+            </div>
+            <div class="list-group list-group-flush">
+              <li class="list-group-item">Pointy Stick: +1ap</li>
+              <li class="list-group-item">Cardboard Helmet: 2ac</li>
+              <li class="list-group-item">Testing</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="apps.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
