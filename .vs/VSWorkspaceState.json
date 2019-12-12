@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Yelp_Camp_Project"
+    "\\Yelp_Camp_Project",
+    "\\Yelp_Camp_Project\\views"
   ],
-  "SelectedNode": "\\Yelp_Camp_Project\\app.js",
+  "SelectedNode": "\\Yelp_Camp_Project\\views\\campgrounds.ejs",
   "PreviewInSolutionExplorer": false
 }
