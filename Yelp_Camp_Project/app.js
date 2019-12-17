@@ -14,7 +14,8 @@ db.once('open', function(){
 // SCHEMA SETUP
 var campgroundSchema = new mongoose.Schema({
 	name: String,
-	image: String
+	image: String,
+	description: String
 });
 
 var Campground = mongoose.model("Campground", campgroundSchema);
@@ -22,7 +23,8 @@ var Campground = mongoose.model("Campground", campgroundSchema);
 // Campground.create(
 // 	{ 
 // 		name: "Granite Hill",
-// 		image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+// 		image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+// 		description: "This is a huge granite hill, no bathrooms, no water, beautiful granite."
 // 	},  function(err, campground){
 // 		if(err){
 // 			console.log(err);
@@ -45,7 +47,7 @@ app.get("/campgrounds", function (req, res) {
 		if(err){
 			console.log(err);
 		} else {
-			res.render("campgrounds", {campgrounds: allCampgrounds})
+			res.render("index", {campgrounds: allCampgrounds})
 		}
 	});
 	// res.render("campgrounds", { campgrounds: campgrounds });
@@ -59,16 +61,30 @@ app.post("/campgrounds", function(req, res){
 	// get data from from and add to campgrounds array
 	var name = req.body.name;
 	var image = req.body.image;
-	var newCampground = {name: name, image: image};
+	var desc = req.body.description;
+	var newCampground = {name: name, image: image, description: desc};
 	// Create a new campground and save to DB
 	Campground.create(newCampground, function(err, newlyCreated){
 		if(err){
 			console.log(err);
 		} else {
 			// redirect back to campgrounds page
-			res.redirect("campgrounds");
+			res.redirect("/campgrounds");
 		}
 	});
+});
+
+// SHOW - shows more info about one campground
+app.get("/campgrounds/:id", function(req, res){
+	//find campground with provided id
+	Campground.findById(req.params.id, function(err, foundCampground){
+		if(err){
+			console.log(err);
+		} else {
+			//render show template about id
+			res.render("show", {campground: foundCampground});
+		}
+	})
 
 });
 
