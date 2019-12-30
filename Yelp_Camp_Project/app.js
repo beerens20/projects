@@ -21,6 +21,9 @@ db.once('open', function(){
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
+// Link external stylesheets
+app.use(express.static(__dirname + "/public"));
+
 app.get("/", function (req, res) {
 	res.render("landing");
 });
