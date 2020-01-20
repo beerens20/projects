@@ -1,24 +1,23 @@
-var express 			= require("express"),
-		app 					= express(),
-		request 			= require("request"),
-		bodyParser 		= require("body-parser"),
-		mongoose 			= require("mongoose"),
-		Campground 		= require("./models/campground"),
-		Comment 			= require("./models/comment"),
-		User					= require("./models/user"),
-		passport			= require("passport"),
-		LocalStrategy	= require("passport-local"),
-		User					= require("./models/user"),
-		seedDB				= require("./seeds")
+var express 				= require("express"),
+	app 					= express(),
+	request 				= require("request"),
+	bodyParser 				= require("body-parser"),
+	mongoose 				= require("mongoose"),
+	Campground 				= require("./models/campground"),
+	Comment 				= require("./models/comment"),
+	User					= require("./models/user"),
+	passport				= require("passport"),
+	LocalStrategy			= require("passport-local"),
+	User					= require("./models/user"),
+	methodOverride			= require("method-override"),
+	flash					= require("connect-flash"),
+	seedDB					= require("./seeds")
 
-var commentRoutes 		= require("./routes/comments"),
-		campgroundRoutes 	= require("./routes/campgrounds"),
-		indexRoutes				= require("./routes/index")
-
-
+var commentRoutes 			= require("./routes/comments"),
+	campgroundRoutes 		= require("./routes/campgrounds"),
+	indexRoutes				= require("./routes/index")
 
 // seedDB();
-
 
 mongoose.connect('mongodb://localhost/yelp_camp', {useNewUrlParser:  true});
 var db = mongoose.connection;
@@ -26,6 +25,8 @@ db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function(){
 	console.log("DB connected");
 });
+app.use(methodOverride("_method"));
+app.use(flash());
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
@@ -42,6 +43,7 @@ passport.deserializeUser(User.deserializeUser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
+
 // Link external stylesheets
 app.use(express.static(__dirname + "/public"));
 
@@ -52,7 +54,7 @@ app.use(function(req, res, next){
 });
 
 app.use(indexRoutes);
-app.use(commentRoutes);
+app.use("/campgrounds/:id/comments", commentRoutes);
 app.use("/campgrounds", campgroundRoutes);
 
 

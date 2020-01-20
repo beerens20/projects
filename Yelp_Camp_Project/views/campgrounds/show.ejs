@@ -17,6 +17,13 @@
           <h4 class="float-right">$9.00/night</h4>
           <h4><a href="#"><%= campground.name %></a></h4>
           <p><%= campground.description %></p>
+          <p><em>Submitted by: <%= campground.author.username %></em></p>
+          <% if(currentUser && campground.author.id.equals(currentUser._id)){ %>
+            <a class="btn btn-warning" href="/campgrounds/<%= campground._id %>/edit">Edit</a>
+            <form class="deleteForm" action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
+              <button class="btn btn-danger">DELETE</button>
+            </form>
+          <% } %>
         </div>
       </div>
       <div class="card bg-light m-3">
@@ -27,9 +34,15 @@
         <% campground.comments.forEach(function(comment){ %>
           <div class="row">
             <div class="col-md-12">
-              <strong><%= comment.author %></strong>
+              <strong><%= comment.author.username %></strong>
               <span class="float-right">10 days ago</span>
               <p><%= comment.text %></p>
+              <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+              <a href="/campgrounds/<%=campground._id%>/comments/<%=comment._id%>/edit" class="btn btn-warning btn-small">Edit</a>
+              <form class="deleteForm" action="/campgrounds/<%=campground._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
+                <input type="submit" class="btn btn-sm btn-danger" value="DELETE">
+              </form>
+              <% } %>
             </div>
           </div>
         <% }) %>
@@ -37,14 +50,5 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
 
 <%- include("../partials/footer") %>

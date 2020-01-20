@@ -1,26 +1,13 @@
-var express = require("express");
-var router = express.Router();
-var passport = require("passport");
-var User = require("../models/user");
-var Campground = require("../models/campground");
+var express 		= require("express");
+var router 			= express.Router();
+var passport 		= require("passport");
+var User 				= require("../models/user");
+var Campground 	= require("../models/campground");
 
 router.get("/", function (req, res) {
 	res.render("landing");
 });
 
-router.get("/campgrounds", function (req, res) {
-	// Get all campground from DB
-	Campground.find({}, function(err, allCampgrounds){
-		if(err){
-			console.log(err);
-		} else {
-			res.render("campgrounds/index", {campgrounds: allCampgrounds, currentUser: req.user})
-		}
-	});
-	// res.render("campgrounds", { campgrounds: campgrounds });
-});
-
-// AUTH ROUTES
 //show register form
 router.get("/register", function(req, res){
 	res.render("register");
@@ -42,7 +29,7 @@ router.post("/register", function(req, res){
 
 //show login form
 router.get("/login", function(req, res){
-	res.render("login");
+	res.render("login", {message: req.flash("error")});
 });
 // handle login logic
 router.post("/login",passport.authenticate("local", 

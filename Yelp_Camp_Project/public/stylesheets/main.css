@@ -9,3 +9,7 @@
 .img-thumbnail .figure-caption {
   padding: 9px;
 }
+
+.deleteForm {
+  display: inline;
+}
