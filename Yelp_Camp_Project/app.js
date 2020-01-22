@@ -50,6 +50,8 @@ app.use(express.static(__dirname + "/public"));
 // currentUser middleware, makes currentUser available to all routes
 app.use(function(req, res, next){
 	res.locals.currentUser = req.user;
+	res.locals.error = req.flash("error");
+	res.locals.success = req.flash("success");
 	next();
 });
 
